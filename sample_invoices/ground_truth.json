@@ -1,0 +1,139 @@
+{
+  "_about": "Expected line items for the public sample invoices, transcribed by hand from the PDFs. vendor_aliases lists acceptable spellings of the issuer. quantity null = not printed on the line. value_alternatives = the invoice prints more than one defensible line amount (e.g. net and gross).",
+  "_sources": {
+    "invoice2data": "https://github.com/invoice-x/invoice2data/tree/master/tests/compare (MIT-licensed test corpus of real invoices)",
+    "parseur": "https://parseur.com/samples/sample-invoice.pdf (public scanned OCR test invoice; fictional company data)"
+  },
+  "invoices": {
+    "parseur_scanned_2page.pdf": {
+      "kind": "scanned, 2 pages, table continues on page 2, carried-forward subtotal",
+      "vendor_aliases": ["Lindqvist Packaging AB"],
+      "items_total": 45078.62,
+      "items": [
+        {"material": "Shipping carton 400x300x150 mm, printed", "quantity": 10400, "value": 5126.16},
+        {"material": "Shipping carton 400x300x150 mm, printed", "quantity": 8200, "value": 4006.52},
+        {"material": "Vacuum pouch 200x300 mm, 90 um", "quantity": 6400, "value": 376.96},
+        {"material": "Top film 400 mm, 60 um, printed", "quantity": 18, "value": 5079.60},
+        {"material": "Shipping carton 400x300x150 mm, printed", "quantity": 7900, "value": 3953.16},
+        {"material": "Shipping carton 400x300x150 mm, printed", "quantity": 1420, "value": 691.97},
+        {"material": "Thermal label 100x70 mm, 1,000/roll", "quantity": 30, "value": 214.20},
+        {"material": "Top film 400 mm, 60 um, printed", "quantity": 11, "value": 2832.83},
+        {"material": "Shipping carton 400x300x150 mm, printed", "quantity": 4200, "value": 2032.80},
+        {"material": "Stretch film 500 mm, 23 um, cast", "quantity": 32, "value": 385.60},
+        {"material": "Stretch film 500 mm, 23 um, cast", "quantity": 67, "value": 732.98},
+        {"material": "Vacuum pouch 200x300 mm, 90 um", "quantity": 12600, "value": 776.16},
+        {"material": "Thermoforming bottom film 420 mm, 300 um", "quantity": 33, "value": 10023.09},
+        {"material": "Vacuum pouch 200x300 mm, 90 um", "quantity": 37500, "value": 2373.75},
+        {"material": "Vacuum pouch 200x300 mm, 90 um", "quantity": 14000, "value": 848.40},
+        {"material": "Thermal label 100x70 mm, 1,000/roll", "quantity": 270, "value": 1852.20},
+        {"material": "Stretch film 500 mm, 23 um, cast", "quantity": 46, "value": 523.48},
+        {"material": "Top film 400 mm, 60 um, printed", "quantity": 12, "value": 3248.76}
+      ]
+    },
+    "QualityHosting.pdf": {
+      "kind": "digital, 2 pages, German, table spans pages, scrambled text order",
+      "vendor_aliases": ["QualityHosting AG"],
+      "items_total": 34.73,
+      "items": [
+        {"material": "Small Business StandardExchange 2010", "quantity": 1, "value": 3.89},
+        {"material": "Small Business QualityExchange 2010", "quantity": 1, "value": 5.39},
+        {"material": "Small Business QualityExchange 2010", "quantity": 1, "value": 5.39},
+        {"material": "Small Business QualityExchange 2010", "quantity": 1, "value": 5.39},
+        {"material": "Small Business QualityExchange 2010", "quantity": 1, "value": 5.39},
+        {"material": "Small Business QualityExchange 2010", "quantity": 1, "value": 5.39},
+        {"material": "Small Business StandardExchange 2010", "quantity": 1, "value": 3.89}
+      ]
+    },
+    "coolblue1.pdf": {
+      "kind": "digital, Dutch, comma decimals, 'incl.' levy sub-line that is not a separate item",
+      "vendor_aliases": ["Coolblue B.V.", "Coolblue"],
+      "items_total": 717.97,
+      "items": [
+        {"material": "Apple iPad Air Wifi 16 GB Zilver", "quantity": 1, "value": 399.00},
+        {"material": "Decoded Leather Slim Cover Apple iPad Air 2 Zwart", "quantity": 1, "value": 69.99},
+        {"material": "Nintendo 3DS XL Wit + Blauw", "quantity": 1, "value": 189.00},
+        {"material": "Nintendo AC-adapter", "quantity": 1, "value": 14.99},
+        {"material": "Mario Kart 7 3DS", "quantity": 1, "value": 44.99}
+      ]
+    },
+    "coolblue2.pdf": {
+      "kind": "digital, Dutch, thousands with dots (2.321,00), bundle component lines without own price",
+      "vendor_aliases": ["Coolblue B.V.", "Coolblue"],
+      "items_total": 4904.94,
+      "items": [
+        {"material": "Decoded Leather Sleeve 15,4'' Vintage Bruin", "quantity": 2, "value": 199.98},
+        {"material": "Apple MacBook Pro Retina 13,3'' + Apple Magic Mouse", "quantity": 1, "value": 2321.00},
+        {"material": "Microsoft Office Mac Home and Student 2011 NL PKC", "quantity": 1, "value": 124.99},
+        {"material": "HP USB 3.0 Port Replicator 3005pr (H1L08ET)", "quantity": 1, "value": 159.99},
+        {"material": "MSI GS60 2QE-226NL Ghost Pro", "quantity": 1, "value": 1999.00},
+        {"material": "Hex Outpost Origin Rugzak 15'' Grijs", "quantity": 1, "value": 79.99},
+        {"material": "Case-Mate Barely There Case Sony Xperia Z3 Transparant", "quantity": 1, "value": 19.99}
+      ]
+    },
+    "saeco.pdf": {
+      "kind": "digital, Dutch, vendor details only inside an image (needs image-region OCR), zero-value promo line",
+      "vendor_aliases": ["e-Luscious Nederland B.V.", "Saeco"],
+      "items_total": 49.99,
+      "items": [
+        {"material": "Onderhoudsset CA6707/10", "quantity": 1, "value": 49.99},
+        {"material": "SX Flyer SAECO Korting KVDNL", "quantity": 1, "value": 0.00}
+      ]
+    },
+    "NetpresseInvoice.pdf": {
+      "kind": "digital, French, a line without quantity, zero-quantity line",
+      "vendor_aliases": ["NETPRESSE", "Publication Annonce Legale"],
+      "items_total": 46.68,
+      "items": [
+        {"material": "le-tout-lyon.fr du 06/12/2022", "quantity": null, "value": 45.93},
+        {"material": "Justificatif PDF", "quantity": 1, "value": 0.75},
+        {"material": "Justificatif Papier", "quantity": 0, "value": 0.00}
+      ]
+    },
+    "AzureInterior.pdf": {
+      "kind": "digital (Odoo), section subtotals inside the table, units kg/Units/L/g, discount on a line",
+      "vendor_aliases": ["Azure Interior"],
+      "items_total": 262.90,
+      "items": [
+        {"material": "[17589684] Beeswax XL", "quantity": 1, "value": 42.00},
+        {"material": "[FURN_7777] Office Chair", "quantity": 1, "value": 70.00},
+        {"material": "*987123* Olive Oil", "quantity": 1, "value": 0.90},
+        {"material": "[LUX_TRF] Luxury Truffles", "quantity": 15, "value": 150.00}
+      ]
+    },
+    "FlipkartInvoice.pdf": {
+      "kind": "digital, Indian retail invoice, tax-inclusive total column",
+      "vendor_aliases": ["WS Retail Services Pvt. Ltd.", "Flipkart"],
+      "items_total": 319.00,
+      "items": [
+        {"material": "SanDisk Ultra 16 GB MicroSDHC Class 10 48 MB/s Memory Card", "quantity": 1, "value": 319.00}
+      ]
+    },
+    "AmazonWebServices.pdf": {
+      "kind": "digital, service charges without quantities or table header",
+      "vendor_aliases": ["Amazon Web Services, Inc.", "Amazon Web Services"],
+      "items_total": 4.11,
+      "items": [
+        {"material": "AWS Data Transfer", "quantity": null, "value": 0.01},
+        {"material": "Amazon Elastic Compute Cloud", "quantity": null, "value": 1.87},
+        {"material": "Amazon Glacier", "quantity": null, "value": 2.22},
+        {"material": "Amazon Simple Storage Service", "quantity": null, "value": 0.01}
+      ]
+    },
+    "free_fiber.pdf": {
+      "kind": "digital, French, 2 pages, summary on page 1 and detail on page 2 (same charge twice)",
+      "vendor_aliases": ["Free", "Free SAS"],
+      "items_total": 29.99,
+      "items": [
+        {"material": "Free Haut Débit du 1er au 31 Juillet 2015", "quantity": null, "value": 29.99, "value_alternatives": [24.99]}
+      ]
+    },
+    "oyo.pdf": {
+      "kind": "digital payment receipt, quantity embedded in rate text ('x 1 Night x 1 Room')",
+      "vendor_aliases": ["Oravel Stays Pvt. Ltd.", "Oravel Stays Private Limited", "OYO"],
+      "items_total": 1939.00,
+      "items": [
+        {"material": "Room Charges", "quantity": 1, "value": 1939.00}
+      ]
+    }
+  }
+}
